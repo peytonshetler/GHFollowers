@@ -36,7 +36,10 @@ class GFTextField: UITextField {
         minimumFontSize             = 12
         
         backgroundColor             = .tertiarySystemBackground
-        autocorrectionType          = .no // Auto-correct, just what it sounds like
+        autocorrectionType          = .no // Auto-correct
+     //  Unnecessary if you want the default keyboard BUT...you can change the keyboard type to things like email, phone number, etc.
+     // keyboardType                = .default
+        returnKeyType               = .go // changes the return key
         
         placeholder                 = "Enter a username"
     }
