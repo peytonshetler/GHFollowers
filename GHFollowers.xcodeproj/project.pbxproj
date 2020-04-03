@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7941317D2437ADE400FA4058 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941317C2437ADE400FA4058 /* Follower.swift */; };
+		7941317F2437AEA900FA4058 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941317E2437AEA900FA4058 /* User.swift */; };
+		794131822437B29100FA4058 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794131812437B29100FA4058 /* NetworkManager.swift */; };
+		794131852437C2D400FA4058 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794131842437C2D400FA4058 /* GFError.swift */; };
 		799E48E12433C00200486C9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 799E48E02433C00200486C9F /* AppDelegate.swift */; };
 		799E48EA2433C00600486C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 799E48E92433C00600486C9F /* Assets.xcassets */; };
 		799E48ED2433C00600486C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 799E48EB2433C00600486C9F /* LaunchScreen.storyboard */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7941317C2437ADE400FA4058 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		7941317E2437AEA900FA4058 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		794131812437B29100FA4058 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		794131842437C2D400FA4058 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		799E48DD2433C00200486C9F /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		799E48E02433C00200486C9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		799E48E92433C00600486C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7941317B2437ADD200FA4058 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7941317C2437ADE400FA4058 /* Follower.swift */,
+				7941317E2437AEA900FA4058 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		794131802437B27C00FA4058 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				794131812437B29100FA4058 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		794131832437C2C200FA4058 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				794131842437C2D400FA4058 /* GFError.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		79524B94243658A500C61F14 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +147,9 @@
 		799E48DF2433C00200486C9F /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				794131832437C2C200FA4058 /* Utilities */,
+				794131802437B27C00FA4058 /* Managers */,
+				7941317B2437ADD200FA4058 /* Models */,
 				79524B972436596D00C61F14 /* Support */,
 				79524B962436590C00C61F14 /* Extensions */,
 				79524B95243658DE00C61F14 /* Custom Views */,
@@ -199,10 +235,14 @@
 				79C008CC243550D900EFE9AA /* GFButton.swift in Sources */,
 				799E48F72433D6BF00486C9F /* FavoritesListVC.swift in Sources */,
 				79C008D424364AA500EFE9AA /* GFMessageLabel.swift in Sources */,
+				7941317F2437AEA900FA4058 /* User.swift in Sources */,
 				79C008D2243648FF00EFE9AA /* GFTitleLabel.swift in Sources */,
+				7941317D2437ADE400FA4058 /* Follower.swift in Sources */,
 				79C008D024363E8000EFE9AA /* FollowerListVC.swift in Sources */,
 				799E48F52433D68A00486C9F /* SearchVC.swift in Sources */,
 				799E48E12433C00200486C9F /* AppDelegate.swift in Sources */,
+				794131852437C2D400FA4058 /* GFError.swift in Sources */,
+				794131822437B29100FA4058 /* NetworkManager.swift in Sources */,
 				79C008D624364BCB00EFE9AA /* GFAlertVC.swift in Sources */,
 				79C008D824364DEE00EFE9AA /* GFAlertContainerView.swift in Sources */,
 			);
