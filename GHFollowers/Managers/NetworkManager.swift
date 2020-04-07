@@ -7,12 +7,13 @@
 //
 // MARK: Singleton
 
-import Foundation
+import UIKit
 
 class NetworkManager {
-    static let shared   = NetworkManager()
-    let baseURL         = "https://api.github.com/"
-    let followersPerPage  = 100
+    static let shared       = NetworkManager()
+    private let baseURL             = "https://api.github.com/"
+    private let followersPerPage    = 100
+    let cache               = NSCache<NSString, UIImage>()
     
     private init() {}
     
@@ -30,11 +31,6 @@ class NetworkManager {
             if let _ = error {
                 completed(.failure(.unableToComplete))
             }
-            // check if response is nil.  If it's not nil, cast it as a Response & return the status code
-//            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-//                completed(nil, "Invalid response from the server.  Please try again.")
-//                return
-//            }
             
             guard let response = response as? HTTPURLResponse else {
                 completed(.failure(.invalidResponse))
