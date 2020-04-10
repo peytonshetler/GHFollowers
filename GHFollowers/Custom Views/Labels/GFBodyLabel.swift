@@ -1,5 +1,5 @@
 //
-//  GFMessageLabel.swift
+//  GFBodyLabel.swift
 //  GHFollowers
 //
 //  Created by Peyton Shetler on 4/2/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GFMessageLabel: UILabel {
+class GFBodyLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()

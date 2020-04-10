@@ -2,10 +2,9 @@
 //  GFError.swift
 //  GHFollowers
 //
-//  Created by Peyton Shetler on 4/3/20.
+//  Created by Peyton Shetler on 4/8/20.
 //  Copyright © 2020 Peyton Shetler. All rights reserved.
 //
-
 import Foundation
 
 enum GFError: String, Error {
