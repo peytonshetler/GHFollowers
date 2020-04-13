@@ -2,7 +2,7 @@
 
 ## Use the Github API to return a user's list of followers. One can then navigate to a details screen to see more information about a follower and/or add that follower to a list of favorites.
 
-**This app 1.utilizes no third-party frameworks and 2. is completely programmatic (no storyboards).**
+**No third-party frameworks and no storyboards**
 
 ##### Technologies used:
 
