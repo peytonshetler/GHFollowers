@@ -19,7 +19,6 @@
 		79344961243E728C0094AA27 /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79344960243E728C0094AA27 /* GFSecondaryTitleLabel.swift */; };
 		79358C152440E70B003E9C51 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79358C142440E70B003E9C51 /* Date+Ext.swift */; };
 		79358C172440E72A003E9C51 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79358C162440E72A003E9C51 /* String+Ext.swift */; };
-		793952392444F5B70078B322 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 793952382444F5B70078B322 /* README.md */; };
 		7941317D2437ADE400FA4058 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941317C2437ADE400FA4058 /* Follower.swift */; };
 		7941317F2437AEA900FA4058 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7941317E2437AEA900FA4058 /* User.swift */; };
 		794131822437B29100FA4058 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794131812437B29100FA4058 /* NetworkManager.swift */; };
@@ -56,7 +55,6 @@
 		79344960243E728C0094AA27 /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		79358C142440E70B003E9C51 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		79358C162440E72A003E9C51 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
-		793952382444F5B70078B322 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7941317C2437ADE400FA4058 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		7941317E2437AEA900FA4058 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		794131812437B29100FA4058 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -69,6 +67,7 @@
 		799E48F42433D68A00486C9F /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		799E48F62433D6BF00486C9F /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		799E48F82433D80F00486C9F /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		79ADB7D12444FB7800072A46 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		79AFFC1A244016EB00963F52 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		79C008CB243550D900EFE9AA /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		79C008CD2435547E00EFE9AA /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
@@ -242,6 +241,7 @@
 		799E48D42433C00200486C9F = {
 			isa = PBXGroup;
 			children = (
+				79ADB7D12444FB7800072A46 /* README.md */,
 				799E48DF2433C00200486C9F /* GHFollowers */,
 				799E48DE2433C00200486C9F /* Products */,
 			);
@@ -266,7 +266,6 @@
 				79524B95243658DE00C61F14 /* Custom Views */,
 				79524B94243658A500C61F14 /* Screens */,
 				799E48EE2433C00600486C9F /* Info.plist */,
-				793952382444F5B70078B322 /* README.md */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -362,7 +361,6 @@
 				79C008D024363E8000EFE9AA /* FollowerListVC.swift in Sources */,
 				79358C172440E72A003E9C51 /* String+Ext.swift in Sources */,
 				799E48F52433D68A00486C9F /* SearchVC.swift in Sources */,
-				793952392444F5B70078B322 /* README.md in Sources */,
 				79021EEF2440D273000EB69E /* GFItemInfoVC.swift in Sources */,
 				79021EF32440D775000EB69E /* GFFollowerItemVC.swift in Sources */,
 				799E48E12433C00200486C9F /* AppDelegate.swift in Sources */,
