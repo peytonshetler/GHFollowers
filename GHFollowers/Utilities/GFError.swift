@@ -16,4 +16,6 @@ enum GFError: String, Error {
     case statusCode500 = "Server error. Please try again."
     case unknownError = "Unknown error occurred. Please try again."
     case invalidData =  "The data recieved from the server was invalid. Please try again."
+    case unableToFavorite = "Error while trying to add user to favorites.  Please try again."
+    case alreadyInFavorites = "This user already exists in favorites."
 }
