@@ -1,5 +1,5 @@
 //
-//  FavoritesListVC.swift
+//  FavoritesListVC.swift  
 //  GHFollowers
 //
 //  Created by Peyton Shetler on 3/31/20.
