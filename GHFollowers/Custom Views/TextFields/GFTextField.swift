@@ -28,19 +28,17 @@ class GFTextField: UITextField {
         layer.borderWidth           = 2
         layer.borderColor           = UIColor.systemGray4.cgColor
         
-        textColor                   = .label // Default label color...it's black on light mode & white on dark mode
-        tintColor                   = .label // blinking cursor
+        textColor                   = .label
+        tintColor                   = .label
         textAlignment               = .center
         font                        = UIFont.preferredFont(forTextStyle: .title2)
         adjustsFontSizeToFitWidth   = true
         minimumFontSize             = 12
         
         backgroundColor             = .tertiarySystemBackground
-        autocorrectionType          = .no // Auto-correct
-     //  Unnecessary if you want the default keyboard BUT...you can change the keyboard type to things like email, phone number, etc.
-     // keyboardType                = .default
-        returnKeyType               = .go // changes the return key
-        
+        autocorrectionType          = .no
+        returnKeyType               = .go
+        clearButtonMode             = .whileEditing
         placeholder                 = "Enter a username"
     }
     
