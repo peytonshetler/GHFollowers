@@ -79,7 +79,8 @@ class FollowerListVC: GFDataLoadingVC {
     func getFollowers(username: String, page: Int) {
         showLoadingView()
         isLoadingMoreFollowers = true
-        NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] (result) in
+        
+        NetworkManager.shared.getFollowers(for: username, page: page) { [weak self] result in
             guard let self = self else { return }
             self.dismissLoadingView()
             

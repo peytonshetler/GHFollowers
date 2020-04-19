@@ -9,10 +9,10 @@ import UIKit
 
 class NetworkManager {
     
-    static let shared       = NetworkManager()
+    static let shared               = NetworkManager()
     private let baseURL             = "https://api.github.com/users/"
     private let followersPerPage    = 100
-    let cache               = NSCache<NSString, UIImage>()
+    let cache                       = NSCache<NSString, UIImage>()
     
     private init() {}
     
@@ -31,22 +31,9 @@ class NetworkManager {
                 completed(.failure(.unableToComplete))
             }
             
-            guard let response = response as? HTTPURLResponse else {
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 completed(.failure(.invalidResponse))
                 return
-            }
-
-            switch response.statusCode {
-            case 200:
-                break
-            case 400:
-                completed(.failure(.statusCode400))
-            case 404:
-                completed(.failure(.statusCode404))
-            case 500:
-                completed(.failure(.statusCode500))
-            default:
-                completed(.failure(.unknownError))
             }
             
             guard let data = data else {
@@ -82,22 +69,9 @@ class NetworkManager {
                 completed(.failure(.unableToComplete))
             }
             
-            guard let response = response as? HTTPURLResponse else {
+            guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
                 completed(.failure(.invalidResponse))
                 return
-            }
-
-            switch response.statusCode {
-            case 200:
-                break
-            case 400:
-                completed(.failure(.statusCode400))
-            case 404:
-                completed(.failure(.statusCode404))
-            case 500:
-                completed(.failure(.statusCode500))
-            default:
-                completed(.failure(.unknownError))
             }
             
             guard let data = data else {
