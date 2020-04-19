@@ -38,8 +38,8 @@ class GFAlertVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.75)
-        view.addSubview(containerView)
-        containerView.addSubViews(titleLabel, actionButton, messageLabel)
+        view.addSubViews(containerView, titleLabel, actionButton, messageLabel)
+        
         configureContainerView()
         configureTitleLabel()
         configureActionButton()
@@ -69,30 +69,30 @@ class GFAlertVC: UIViewController {
     }
     
     
-    func configureActionButton() {
-        actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
-        actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
-        
-        NSLayoutConstraint.activate([
-            actionButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -padding),
-            actionButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
-            actionButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
-            actionButton.heightAnchor.constraint(equalToConstant: 44)
-        ])
-    }
-    
-    
-    func configureMessageLabel() {
-        messageLabel.text           = message ?? "Unable to complete request"
-        messageLabel.numberOfLines  = 4
-        
-        NSLayoutConstraint.activate([
-            messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
-            messageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
-            messageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
-            messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
-        ])
-    }
+        func configureActionButton() {
+            actionButton.setTitle(buttonTitle ?? "Ok", for: .normal)
+            actionButton.addTarget(self, action: #selector(dismissVC), for: .touchUpInside)
+            
+            NSLayoutConstraint.activate([
+                actionButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -padding),
+                actionButton.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+                actionButton.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
+                actionButton.heightAnchor.constraint(equalToConstant: 44)
+            ])
+        }
+
+
+        func configureMessageLabel() {
+            messageLabel.text           = message ?? "Unable to complete request"
+            messageLabel.numberOfLines  = 4
+            
+            NSLayoutConstraint.activate([
+                messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 8),
+                messageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
+                messageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
+                messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
+            ])
+        }
     
     
     @objc func dismissVC() {

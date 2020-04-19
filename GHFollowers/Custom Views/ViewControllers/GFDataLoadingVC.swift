@@ -26,7 +26,6 @@ class GFDataLoadingVC: UIViewController {
         
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         
-        // changing these to equalTo: containerView.whatever causes a crash
         NSLayoutConstraint.activate([
             activityIndicator.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
             activityIndicator.centerXAnchor.constraint(equalTo: containerView.centerXAnchor)
@@ -41,5 +40,12 @@ class GFDataLoadingVC: UIViewController {
             self.containerView.removeFromSuperview()
             self.containerView = nil
         }
+    }
+    
+    
+    func showEmptyStateView(with message: String, in view: UIView) {
+        let emptyStateView = GFEmptyStateView(message: message)
+        emptyStateView.frame = view.bounds
+        view.addSubview(emptyStateView)
     }
 }
